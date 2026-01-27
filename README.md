@@ -1,11 +1,37 @@
-<div align="center">
+# El Viaje del Valor: Una Odisea Financiera
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Esta es una Single Page Application (SPA) educativa diseñada para enseñar la historia del dinero y su relación con la ingeniería civil y las finanzas.
 
-  <h1>Built with AI Studio</h2>
+## Tecnologías Utilizadas
+- **React 18**: Framework de UI.
+- **TypeScript**: Tipado estático.
+- **Vite**: Empaquetador y servidor de desarrollo.
+- **Tailwind CSS**: Estilizado moderno.
+- **Framer Motion**: Animaciones fluidas.
+- **Recharts**: Gráficos interactivos.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Instrucciones de Instalación
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. Descomprime el archivo ZIP.
+2. Abre una terminal en la carpeta del proyecto.
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-</div>
+## Ejecutar Localmente
+
+Para iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Abre tu navegador en la URL que aparecerá en la terminal (usualmente `http://localhost:5173`).
+
+## Estructura del Proyecto
+
+- `App.tsx`: Componente principal y lógica de navegación.
+- `constants.ts`: Contiene todo el contenido narrativo, histórico y educativo.
+- `components/`: Componentes interactivos (juegos, gráficos, lector de historias).
+- `types.ts`: Definiciones de tipos TypeScript.
