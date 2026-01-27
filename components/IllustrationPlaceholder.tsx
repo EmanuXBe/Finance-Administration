@@ -12,23 +12,23 @@ export const IllustrationPlaceholder: React.FC<Props> = ({ type }) => {
   const getImage = () => {
     switch (type) {
       case 'barter': 
-        // 1. Sumerios (Lexica)
-        return 'https://image.lexica.art/full_jpg/195e8760-b089-4978-958a-3607005476a8';
+        // 1. Albañiles Mesopotamia (Drakkar Historia)
+        return 'https://drakkarhistoria.com/wp-content/uploads/2025/05/albaniles-en-mesopotamia.jpg?w=1024';
       case 'commodity': 
-        // 2. Egypt (EgyptToursPortal)
-        return 'https://www.egypttoursportal.com/images/2021/03/Cattle-in-Ancient-Egypt-Egypt-Tours-Portal.jpg';
+        // 2. Ganado / Antigüedad (La Marea)
+        return 'https://www.lamarea.com/wp-content/uploads/2016/07/Captura-de-pantalla-2016-07-14-a-las-12.57.22-1.jpg';
       case 'metal': 
-        // 3. Lydian (CoinInvest)
-        return 'https://www.coininvest.com/blog/wp-content/uploads/sites/4/2019/04/Lydian-Lion.jpg';
+        // 3. Tesorero Rey Persa (National Geographic)
+        return 'https://content-historia.nationalgeographic.com.es/medio/2021/03/19/en-el-vaso-de-dario-el-tesorero-del-rey-persa-apunta-los-tributos-que-le-traen-en-sacos_f085d374_1280x1019.jpg';
       case 'paper': 
-        // 4. Gold (iStock)
-        return 'https://media.istockphoto.com/id/1220235652/photo/gold-bars-and-us-currency.jpg?s=612x612&w=0&k=20&c=K55XjZ5j4f5h4v5h4v5h4v5h4v5h4v5h4v5h4v5h4v';
+        // 4. Gold Standard (Encrypted/Cached)
+        return 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB9OH9h2EnaWAyEEcnklYVrqshIBf-4RvqA&s';
       case 'fiat': 
-        // 5. Hands/Fiat (DepositPhotos)
-        return 'https://st2.depositphotos.com/3591429/10464/i/950/depositphotos_104648666-stock-photo-hands-holding-us-dollar-bills.jpg';
+        // 5. Dinero Fiduciario (Top5Credits)
+        return 'https://cdn.top5credits.com/es/wp-content/uploads/sites/8/2021/03/dinero-fiduciario.jpg?cdn=1.1.1';
       case 'modern': 
-        // 6. Digital (iStock)
-        return 'https://media.istockphoto.com/id/1136667500/photo/digital-us-dollar.jpg?s=612x612&w=0&k=20&c=pXq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7Xq7';
+        // 6. Bitcoin / Digital (Pixabay)
+        return 'https://cdn.pixabay.com/photo/2018/01/18/07/31/bitcoin-3089728_1280.jpg';
       default: 
         return 'https://images.unsplash.com/photo-1507842217343-583bb7260b66?q=80&w=1000&auto=format&fit=crop';
     }
