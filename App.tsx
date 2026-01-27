@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronRight, ChevronLeft, Lightbulb, History, Info, Gamepad2 } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Lightbulb, History, Gamepad2 } from 'lucide-react';
 import { ERAS } from './constants';
 import { BarterGame } from './components/BarterGame';
 import { InflationSimulator } from './components/InflationSimulator';

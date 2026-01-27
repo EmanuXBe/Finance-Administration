@@ -14,14 +14,16 @@ export const BarterGame: React.FC = () => {
       const newInv = inventory.filter(i => i !== costItem);
       newInv.push(receivedItem);
       setInventory(newInv);
-      setLog(prev => [`Intercambiaste ${costItem} por ${receivedItem}.`, ...prev]);
+      // Fixed: Now using targetItem in the log
+      setLog(prev => [`Intercambio con ${targetItem}: diste ${costItem}, recibiste ${receivedItem}.`, ...prev]);
       
       if (receivedItem === 'Comida') {
         setGameState('won');
         setLog(prev => ['¡ÉXITO! Conseguiste comida para la obra.', ...prev]);
       }
     } else {
-      setLog(prev => [`FALLO: El comerciante quiere ${costItem}, pero no lo tienes.`, ...prev]);
+      // Fixed: Now using targetItem in the log
+      setLog(prev => [`FALLO: El ${targetItem} quiere ${costItem}, pero no lo tienes.`, ...prev]);
     }
   };
 
