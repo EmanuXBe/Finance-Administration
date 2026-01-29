@@ -1,4 +1,69 @@
-import { EraDefinition } from './types';
+import { EraDefinition, Paper, Book, Milestone, Affiliation, ArcadeActivity } from './types';
+
+export const MILESTONES: Milestone[] = [
+  { 
+    year: '1988', 
+    title: 'Ingeniera Civil (UMNG)', 
+    description: 'Graduación con honores. El inicio de una carrera dedicada a la infraestructura y la academia.',
+    type: 'academic'
+  },
+  { 
+    year: '2000', 
+    title: 'Magíster en Educación', 
+    description: 'Especialización en pedagogía didáctica en la Universidad de la Sabana.',
+    type: 'academic'
+  },
+  { 
+    year: '2015', 
+    title: 'PhD en Ciencias de la Ingeniería', 
+    description: 'Doctorado en la UMNG y Universidad Santiago de Chile, enfocada en Ambientes Virtuales de Aprendizaje.',
+    type: 'academic'
+  },
+  { 
+    year: 'Actualidad', 
+    title: 'Directora de Investigación', 
+    description: 'Liderazgo del grupo IGE (Ingeniería Geomática y Educación) con más de 290 citaciones globales.',
+    type: 'professional'
+  }
+];
+
+export const AFFILIATIONS: Affiliation[] = [
+  { name: 'Universidad Militar Nueva Granada', role: 'Docente Titular / Investigadora', logo: 'https://www.unimilitar.edu.co/documents/20127/0/Logo-UMNG.png' },
+  { name: 'Grupo de Investigación IGE', role: 'Directora', logo: 'https://via.placeholder.com/150?text=Grupo+IGE' },
+  { name: 'MinCiencias', role: 'Investigadora Senior', logo: 'https://minciencias.gov.co/sites/default/files/logo_minciencias.png' }
+];
+
+export const PAPERS: Paper[] = [
+  { title: "Guía para el diseño de objetos virtuales de aprendizaje (OVA)", year: 2016, topic: 'Educación', citations: 140, link: "#" },
+  { title: "La estereoscopía, métodos y aplicaciones en diferentes áreas", year: 2015, topic: 'Geomática', citations: 53, link: "#" },
+  { title: "Physical and mechanical properties of agglomerated panels", year: 2017, topic: 'Materiales', citations: 40, link: "#" },
+  { title: "Comprensión lectora: motivación, actitud y estrategias lectoras", year: 2017, topic: 'Educación', citations: 15, link: "#" },
+  { title: "Influence of moisture content on the mechanical properties of Guadua Culms", year: 2019, topic: 'Materiales', citations: 5, link: "#" }
+];
+
+export const BOOKS: Book[] = [
+  { title: 'Estrategias Pedagógicas en Ingeniería', year: 2018, cover: 'https://via.placeholder.com/300x450?text=Estrategias+Pedagogicas', synopsis: 'Un compendio sobre cómo la lúdica transforma el aula técnica.' },
+  { title: 'Geomática Aplicada', year: 2020, cover: 'https://via.placeholder.com/300x450?text=Geomatica+Aplicada', synopsis: 'Sistemas de información geográfica para el desarrollo sostenible.' }
+];
+
+export const ARCADE_ACTIVITIES: ArcadeActivity[] = [
+  { 
+    id: 'viaje-del-valor', 
+    title: 'El Viaje del Valor', 
+    course: 'Administración Financiera', 
+    description: 'Una odisea histórica sobre la evolución del dinero.',
+    image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=600&auto=format&fit=crop',
+    status: 'playable'
+  },
+  { 
+    id: 'quiz-materiales', 
+    title: 'Quiz: Resistencia', 
+    course: 'Introducción a la Ingeniería', 
+    description: 'Desafío de conceptos sobre materiales.',
+    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=600&auto=format&fit=crop',
+    status: 'coming-soon'
+  }
+];
 
 export const ERAS: EraDefinition[] = [
   {
