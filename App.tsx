@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { 
-  ChevronRight, ChevronLeft, Lightbulb, History, Gamepad2, 
-  User, BookOpen, GraduationCap, ArrowRight, Linkedin, Github, 
-  FileText, Award, Layers, PlayCircle, Menu, X, ArrowLeft
+  ChevronRight, ChevronLeft, Lightbulb, Gamepad2, 
+  BookOpen, GraduationCap, ArrowRight, Linkedin, Github, 
+  FileText, Award, Menu, X, ArrowLeft
 } from 'lucide-react';
 import { ERAS, MILESTONES, AFFILIATIONS, BOOKS, PAPERS, ARCADE_ACTIVITIES } from './constants';
 import { BarterGame } from './components/BarterGame';
@@ -17,13 +18,11 @@ type ViewState = 'home' | 'about' | 'research' | 'books' | 'arcade' | 'game-valo
 const App: React.FC = () => {
   const [view, setView] = useState<ViewState>('home');
   const [currentEraIndex, setCurrentEraIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const navigateEra = (newDirection: number) => {
     const newIndex = currentEraIndex + newDirection;
     if (newIndex >= 0 && newIndex < ERAS.length) {
-      setDirection(newDirection);
       setCurrentEraIndex(newIndex);
     }
   };
